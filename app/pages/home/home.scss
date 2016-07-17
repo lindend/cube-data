@@ -1,0 +1,33 @@
+.home {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    .cube-display {
+        flex-grow: 1;
+        max-height: 70%;
+    }
+
+    .move-view {
+        height: 35px;
+        flex-grow: 0;
+        line-height: 25px;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .bottom-menu {
+        flex-grow: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        button {
+            flex-grow: 1;
+            height: 40px;
+        }
+    }
+}

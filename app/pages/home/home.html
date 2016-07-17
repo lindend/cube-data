@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="home">
+    <div class="cube-display">
+      <cube-view [topColor]="topColor[sideIndex]" [colors]="frontColors[sideIndex]"></cube-view>
+    </div>
+    <div class="move-view">
+      {{previousMove}}
+    </div>
+    <div class="bottom-menu">
+      <button clear (click)="doRandomRotation()">
+        <ion-icon name="shuffle"></ion-icon>
+      </button>
+      <button clear (click)="nextSide()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+      <button clear (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </div>
+  </div>
+</ion-content>
